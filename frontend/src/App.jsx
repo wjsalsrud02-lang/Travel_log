@@ -13,7 +13,7 @@ import Home from './contents/Home';
 import PlaceCard from './components/place/PlaceCard';
 import ReviewListPage from './contents/review/ReviewListPage'
 import TravelLogPage from './contents/travelLog/TravelLogPage'
-import Auth from './contents/user/SignUp';
+import SignUp from './contents/user/SignUp';
 import Login from './contents/user/Login';
 // import Logout from './contents/user/Logout';
 import MyPage from './contents/user/MyPage';
@@ -46,7 +46,7 @@ function App() {
       <Route path="/:category" element={<PlaceCard />}></Route>
       <Route path="/review" element={<ReviewListPage />}></Route>
       <Route path="/travelLog" element={<TravelLogPage />}></Route>
-      <Route path="/Auth" element={<Auth />}></Route>
+      <Route path="/SignUp" element={<SignUp />}></Route>
       <Route path="/Login" element={<Login />}></Route>
       {/* <Route path="/Logout" element={<Logout />}></Route> */}
       <Route path="/MyPage" element={<MyPage />}></Route>
