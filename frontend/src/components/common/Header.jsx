@@ -87,7 +87,7 @@ const Header = () => {
                                 <Link to="/Login" onClick={closeUserMenu}>로그인</Link>
                             </li>
                             <li>
-                                <Link to="/Auth" onClick={closeUserMenu}>회원가입</Link>
+                                <Link to="/SignUp" onClick={closeUserMenu}>회원가입</Link>
                             </li>
                             <li>
                                 <Link to="/MyPage" onClick={closeUserMenu}>마이페이지</Link>
