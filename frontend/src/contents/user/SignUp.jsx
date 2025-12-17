@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GENDER } from '../../constants/enums'
 import './SignUp.css'
 
-const Auth = () => {
+const SignUp = () => {
 
   return (
     <div class="signup-page">
@@ -38,4 +38,4 @@ const Auth = () => {
   );
 };
 
-export default Auth;
+export default SignUp;
