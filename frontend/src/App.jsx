@@ -16,6 +16,8 @@ import SignUp from './contents/user/SignUp';
 import Login from './contents/user/Login';
 // import Logout from './contents/user/Logout';
 import MyPage from './contents/user/MyPage';
+import PlaceList from './contents/place/PlaceListPage';
+import PlaceDetail from './contents/place/PlaceDetailPage';
 import TopButton from './components/common/TopButton';
 import Footer from './components/common/Footer';
 
@@ -50,6 +52,10 @@ function App() {
       <Route path="/Login" element={<Login />}></Route>
       {/* <Route path="/Logout" element={<Logout />}></Route> */}
       <Route path="/MyPage" element={<MyPage />}></Route>
+      <Route path="/PlaceList" element={<PlaceList/>}></Route>
+      <Route path="/PlaceDetail" element={<PlaceDetail/>}></Route>
+
+
     </Routes>
 
     <TopButton />
