@@ -93,40 +93,40 @@ const SignUp = () => {
   };
 
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  const { userid, password, password2, email, username } = form;
+    const { userid, password, password2, email, username } = form;
 
-  if (!userid || !password || !password2 || !email || !username) {
-    alert('필수 항목을 모두 입력해주세요.');
-    return;
-  }
+    if (!userid || !password || !password2 || !email || !username) {
+      alert('필수 항목을 모두 입력해주세요.');
+      return;
+    }
 
-  if (password !== password2) {
-    alert('비밀번호가 일치하지 않습니다.');
-    return;
-  }
+    if (password !== password2) {
+      alert('비밀번호가 일치하지 않습니다.');
+      return;
+    }
 
-  if (Object.values(available).some(v => v !== true)) {
-    alert('중복 확인을 완료해주세요.');
-    return;
-  }
+    if (Object.values(available).some(v => v !== true)) {
+      alert('중복 확인을 완료해주세요.');
+      return;
+    }
 
-  const formData = new FormData();
-  Object.entries(form).forEach(([KeyboardEvent, value])=>{
-    formData.append('profile_image', file)
-  })
+    const formData = new FormData();
+    Object.entries(form).forEach(([KeyboardEvent, value])=>{
+      formData.append('profile_image', file)
+    })
 
-  try {
-    await signUp(form);
-    alert('회원가입이 완료되었습니다.');
-    window.location.href = '/Login';
-  } catch (err) {
-    console.error(err);
-    alert('회원가입에 실패했습니다.');
-  }
-};
+    try {
+      await signUp(form);
+      alert('회원가입이 완료되었습니다.');
+      window.location.href = '/Login';
+    } catch (err) {
+      console.error(err);
+      alert('회원가입에 실패했습니다.');
+    }
+  };
 
   return (
     <div className="signup-wrap">
@@ -223,6 +223,7 @@ const handleSubmit = async (e) => {
           <span className="text">
             <a href="/Login">계정을 가지고 계십니까?</a>
           </span>
+        </div>
         </div>
 
         <div className="bg-wrap"></div>
