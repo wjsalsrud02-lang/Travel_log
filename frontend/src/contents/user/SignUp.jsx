@@ -136,7 +136,6 @@ const SignUp = () => {
   };
 
   return (
-    <>
       <div className="signup-wrap">
         <div className="signup-inner">
           <div className="signup-item">
@@ -237,12 +236,14 @@ const SignUp = () => {
             <a href="/Login" className="text">
               계정을 가지고 계십니까?
             </a>
-          </div>
+        </div>
 
           <div className="bg-wrap"></div>
         </div>
       </div>
-    </>
+
+      <div className="bg-wrap"></div>
+    </div>
   );
 };
 
