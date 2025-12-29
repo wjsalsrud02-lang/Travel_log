@@ -244,7 +244,6 @@ const SignUp = () => {
           <div className="bg-wrap"></div>
         </div>
       </div>
-    </div>
   );
 };
 
