@@ -24,49 +24,57 @@ import Footer from './components/common/Footer';
 import ScrollHandler from './components/common/ScrollHandler';
 import apiClient from './API/axios';
 import { AuthProvider } from './context/AuthContext';
+import ReviewWritePage from './contents/review/ReviewWritePage';
+import TravelLogWritePage from './contents/travelLog/TravelLogWritePage';
+import TravelLogDetailPage from './contents/travelLog/TravelLogDetailPage';
+
 
 function App() {
   const navigate = useNavigate();
   const [message, setMessage] = useState("");
-  useEffect(()=>{
-      fetch("http://localhost:5000/")
-          .then(res => res.json())
-          .then(data => {
-              console.log(data);
-              setMessage(data.message)
-          })
-          .catch(err => console.error(err));
-  },[]);
+  useEffect(() => {
+    fetch("http://localhost:5000/")
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        setMessage(data.message)
+      })
+      .catch(err => console.error(err));
+  }, []);
 
   return (
-  <div className="App">
-    {/* header */}
-    <ScrollHandler />
-    <Header />
-    {/* end header */}
+    <div className="App">
+      {/* header */}
+      <ScrollHandler />
+      <Header />
+      {/* end header */}
 
-    <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="/places/:type" element={<PlacePage />}></Route>
-      <Route path="/review" element={<ReviewListPage />}></Route>
-      <Route path="/travelLog" element={<TravelLogPage />}></Route>
-      <Route path="/SignUp" element={<SignUp />}></Route>
-      <Route path="/Login" element={<Login />}></Route>
-      {/* <Route path="/Logout" element={<Logout />}></Route> */}
-      <Route path="/MyPage" element={<MyPage />}></Route>
-      <Route path="/PlaceList" element={<PlaceList/>}></Route>
-      <Route path="/PlaceDetail" element={<PlaceDetail/>}></Route>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/places/:type" element={<PlacePage />}></Route>
+        <Route path="/review" element={<ReviewListPage />}></Route>
+        <Route path="/travelLog" element={<TravelLogPage />}></Route>
+        <Route path="/SignUp" element={<SignUp />}></Route>
+        <Route path="/Login" element={<Login />}></Route>
+        {/* <Route path="/Logout" element={<Logout />}></Route> */}
+        <Route path="/MyPage" element={<MyPage />}></Route>
+        <Route path="/PlaceList" element={<PlaceList />}></Route>
+        <Route path="/PlaceDetail" element={<PlaceDetail />}></Route>
+        <Route path="/reviews" element={<ReviewListPage />} />
+        <Route path="/reviews/write" element={<ReviewWritePage />} />
+        <Route path="/travellog/write" element={<TravelLogWritePage />} />
+        <Route path="/travelLog/:id" element={<TravelLogDetailPage />} />
 
 
-    </Routes>
+      </Routes>
 
-    <TopButton />
+      <TopButton />
 
-    {/* footer */}
-    <Footer />
-    {/* end footer */}
+      {/* footer */}
+      <Footer />
+      {/* end footer */}
 
-  </div>
+    </div>
   );
 }
 
