@@ -1,7 +1,10 @@
 import React from 'react';
 import './TravelLogPage.css';
+import { useNavigate } from 'react-router-dom';
 
 const TravelLogPage = () => {
+  const navigate = useNavigate();
+
   const reviews = [
     { id: 27, title: '게시글 제목', nickname: '글쓴이', date: '2025.12.11', like: 125 },
     { id: 26, title: '게시글 제목', nickname: '글쓴이', date: '2025.12.11', like: 125 },
@@ -9,7 +12,7 @@ const TravelLogPage = () => {
 
   return (
     <div className="review-page">
-      <div className="review-pic" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/review/reviewlistmain.png)` }}>
+      <div className="review-pic" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/review/mytravellogmain.png)` }}>
         <h1>My Travellog</h1>
         <div className="review-search-box">
           <input type="text" />
@@ -51,7 +54,12 @@ const TravelLogPage = () => {
         </table>
 
         <div className="review-write-btn-wrap">
-          <button className="review-write-btn">글 작성하기</button>
+           <button
+      className="review-write-btn"
+      onClick={() => navigate('/travellog/write')}
+    >
+      글 작성하기
+    </button>
         </div>
 
         <div className="pagination">
