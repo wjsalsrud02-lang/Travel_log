@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-* {margin: 0; padding: 0; box-sizing: border-box;}
-
-body {font-family: "pretendard", sans-serif; color: #111;}
-
-
 .section-wrap {display: flex; justify-content: center; align-items: center; flex-direction: column;}
 
 .section-img {width: 100%; background: #e5e7eb; overflow: hidden; position: relative;}
