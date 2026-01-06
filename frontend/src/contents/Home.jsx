@@ -26,7 +26,7 @@ const Home = () => {
             setTravel(res.data.travel);
             setActivity(res.data.activity);
             setFestival(res.data.festival);})
-        .catch(err => console.err(err))
+        .catch(err => console.error(err))
         }, [])
 
     const stopClickIfDragging = (e) => {

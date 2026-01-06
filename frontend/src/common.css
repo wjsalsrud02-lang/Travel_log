@@ -178,7 +178,19 @@ footer {}
     .top-btn {right: 25px; bottom: 25px;}
 }
 
-/* board - 리뷰, 나의 여행로그 */
+/* 좋아요 */
+.heart-btn {width: 25px; height: 25px; flex-shrink: 0;}
+.heart-btn img {width: 100%; height: 100%; transition: transform .2s ease, opacity .2s ease;}
+
+@media (max-width: 1024px) {
+    .heart-btn {width: 23px; height: 23px;}
+}
+
+@media (max-width: 768px) {
+    .heart-btn {width: 20px; height: 20px;}
+}
+
+/* board List - 리뷰, 나의 여행로그 */
 .board-wrap {}
 .board-wrap .board-inner {width: 100%; max-width: 1250px; margin: 0 auto; padding: 0 0 70px; box-sizing: border-box;}
 

@@ -5,7 +5,7 @@
 .place-wrap .place-inner .top-wrap {width: 100%; height: 400px; overflow: hidden;}
 .place-wrap .place-inner .top-wrap img {display: block; width: 100%; height: 100%; object-fit: cover;}
 
-.place-wrap .place-inner .content-wrap {padding: 100px 40px 0; box-sizing: border-box;}
+.place-wrap .place-inner .content-wrap { box-sizing: border-box;}
 .content-wrap > .title {font-family: 'Candal', cursive; font-size: 60px;}
 
 .scroll-animate {opacity: 0; transform: translateY(50px); transition: opacity .8s ease, transform .8s ease;}
@@ -164,9 +164,6 @@
 .place-wrap .place-inner .recommend-wrap .recommended-inner .pagination button:hover {color: #333;}
 .place-wrap .place-inner .recommend-wrap .recommended-inner .pagination .current {font-size: 15px; font-weight: bold; color: #333;}
 
-.heart-btn {width: 25px; height: 25px; flex-shrink: 0;}
-.heart-btn img {width: 100%; height: 100%; transition: transform .2s ease, opacity .2s ease;}
-
 @media (max-width: 1250px) {
     .place-wrap .place-inner .recommend-wrap {margin: 120px 0 0;}
     .place-wrap .place-inner .recommend-wrap .recommended-inner {padding: 100px 30px 40px;}
@@ -187,8 +184,6 @@
     .place-wrap .place-inner .recommend-wrap .recommended-inner .item .item-actions {justify-content: flex-end; width: 100%; margin-left: 0;}
     .place-wrap .place-inner .recommend-wrap .recommended-inner .item .item-actions .item-tag {font-size: 16px; margin-right: auto;}
     .place-wrap .place-inner .recommend-wrap .recommended-inner .item .item-actions .detail-btn {padding: 7px 16px; font-size: 14px;}
-    
-    .heart-btn {width: 23px; height: 23px;}
 }
 
 @media (max-width: 768px) {
@@ -205,8 +200,6 @@
     .place-wrap .place-inner .recommend-wrap .recommended-inner .item .item-actions .item-tag {margin-right: auto; font-size: 16px;}
     .place-wrap .place-inner .recommend-wrap .recommended-inner .pagination button {font-size: 12px;}
     .place-wrap .place-inner .recommend-wrap .recommended-inner .pagination .current {font-size: 14px;}
-    
-    .heart-btn {width: 20px; height: 20px;}
 }
 
 @media (max-width: 480px) {
