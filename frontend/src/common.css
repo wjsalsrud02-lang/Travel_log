@@ -32,7 +32,7 @@ header {position: sticky; top: 0; width: 100%; background-color: #fff; z-index: 
 
 
 .header-wrap .header-inner .header__util-wrap .header__util-inner .header__util-hover {position: relative; padding-bottom: 13px; transform: translateY(7px);}
-.header-wrap .header-inner .header__util-wrap .header__util-inner .header__util-list {overflow: hidden; position: absolute; top: 100%; left: 50%; width: 150px; max-height: 0; padding: 0 20px; border: 1px solid #ddd; border-radius: 7px; background-color: #fff; box-shadow: 0px 5px 12px rgba(0, 0, 0, .05); box-sizing: border-box; opacity: 0; transform: translateX(-50%); transition: max-height .25s ease, opacity .2s ease; pointer-events: none; text-align: center;}
+.header-wrap .header-inner .header__util-wrap .header__util-inner .header__util-list {overflow: hidden; position: absolute; top: 100%; right: -15px; width: 150px; max-height: 0; padding: 0 20px; border: 1px solid #ddd; border-radius: 7px; background-color: #fff; box-shadow: 0px 5px 12px rgba(0, 0, 0, .05); box-sizing: border-box; opacity: 0; transition: max-height .25s ease, opacity .2s ease; pointer-events: none; text-align: center;}
 
 .header-wrap .header-inner .header__util-wrap .header__util-inner .header__util-list li {padding: 10px 5px;}
 .header-wrap .header-inner .header__util-wrap .header__util-inner .header__util-list li:first-child {padding: 15px 5px 10px;}
@@ -109,7 +109,7 @@ header {position: sticky; top: 0; width: 100%; background-color: #fff; z-index: 
     .header-wrap .header-inner .header__util-wrap .header__util-inner .header__util.wishlist img {width: 23px;}
     .header-wrap .header-inner .header__util-wrap .header__util-inner .header__util.search img {width: 22px;}
 
-    .header-wrap .header-inner .header__util-wrap .header__util-inner .header__util-list {width: 130px;}
+    .header-wrap .header-inner .header__util-wrap .header__util-inner .header__util-list {right: auto; left: 50%; width: 130px; transform: translateX(-50%);}
     .header-wrap .header-inner .header__util-wrap .header__util-inner .header__util-list li:first-child {padding: 10px 7px 5px;}
     .header-wrap .header-inner .header__util-wrap .header__util-inner .header__util-list li {padding: 5px 7px; font-size: 14px;}
     .header-wrap .header-inner .header__util-wrap .header__util-inner .header__util-list li:last-child {padding: 5px 7px 10px;}
